@@ -2,6 +2,10 @@
     background: red; width: 4px; height: 400px; margin: 0 auto;
 }
 
+#to-hide{
+    display: none;
+}
+
 #exit-gate{
     background: red; width: 4px; height: 400px; margin: 0 auto;
 }
@@ -46,6 +50,33 @@ i{
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
+
+@media only screen and (max-width: 1080px) {
+    nav{
+      font-size: 10px!important;
+    }
+
+    #entry-gate, #exit-gate{
+        background: red; width: 40px; height: 40px; margin: 10px auto; border-radius: 50%; color: white; padding-top: 9px;
+    }
+
+    #to-be-hide{
+        display: none;
+    }
+
+    #to-hide{
+        display: block;
+    }
+
+    #counter{
+        margin: 50px 0;
+    }
+
+    #alert{
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+  }
 
 body {
     background: #fff;

@@ -19,7 +19,7 @@
 <body data-spy="scroll">
     <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="205">
         <div class="container-fluid">
-            <center>Contact-free Entry System and Crowd Control using Silent Laser Tripwire</center>
+            <center id="nav-text">Contact-free Entry System and Crowd Control using Silent Laser Tripwire</center>
         </div>
     </nav>  
 
@@ -32,23 +32,23 @@
                 </div>
                 <div class="col-md-1">
                     <p>Entry <br>Gate</p>
-                    <div id="entry-gate" onmouseover="addCount()"></div>                    
+                    <div id="entry-gate" onmouseover="addCount()"><span id="to-hide">+</span></div>                    
                 </div>
                 <div class="col-md-8 col-sm-12 col-xs-12">
-                    <h3>Live Count of Customers</h3>
+                    <h3 id="to-be-hide">Live Count of Customers</h3>
                     <a class="btn-floating btn-large waves-effect waves-light red" id="counter" onclick="resetCount()">
                         <span id="count">0</span>
                     </a>
                     <div id="alert">Too many customers</div>
-                    <div class="gap">
-                        <div id="store">
-                            <p id="ppl"></p>
+                    <div class="gap" id="to-be-hide">
+                        <div id="store" id="to-be-hide">
+                            <p id="ppl" id="to-be-hide"></p>
                         </div>
                     </div>                
-                </div>
+                </div>  
                 <div class="col-md-1">
                     <p>Exit <br>Gate</p>
-                    <div id="exit-gate" onmouseover="delCount()"></div>
+                    <div id="exit-gate" onmouseover="delCount()"><span id="to-hide">-</span></div>
                 </div>
                 <div class="col-md-1">
                     
