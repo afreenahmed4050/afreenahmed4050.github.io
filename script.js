@@ -7,7 +7,7 @@ function addCount(){
   Materialize.toast('A customer has entered the store', 2000);
   $("#ppl").append('<i class="fa fa-street-view"></i>'); 
   document.getElementById("count").innerHTML = count;
-  if (count <= 10){$("#alert").hide();}
+  if (count < 10){$("#alert").hide();}
   else {$('#alert').show();}
 
   rootRef.child("count").set(count);
